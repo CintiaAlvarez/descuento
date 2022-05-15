@@ -1,2 +1,0 @@
-# descuento
-Created with CodeSandbox
