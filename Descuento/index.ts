@@ -15,3 +15,4 @@ let descuento: number = precio * porcentaje;
 let resultado: number = precio - descuento;
 console.log("Precio final con descuento ", resultado);
 }
+});

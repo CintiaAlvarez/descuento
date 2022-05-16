@@ -1,18 +1,18 @@
-let dato = document.getElementById("dato");
+let dato1 = document.getElementById("dato1");
 
-let btnEnviar = document.getElementById("Enviar");
-let rotulo = document.getElementById("rotulo");
+let btnEnviar = document.getElementById("enviar");
+let rotulo1 = document.getElementById("rotulo1");
 
-rotulo.innerHTML = "Ingrese puesto en la carrera";
+rotulo1.innerHTML = "Ingrese su puesto en la carrera";
 
 btnEnviar.addEventListener("click", () => {
-  let puesto: number = "dato.value";
+  let puesto: number = Number(dato1.value);
 
   if (puesto === 1) {
-    console.log("Usted recibe medalla de oro");
+    console.log("Felicitaciones, su medalla es de Oro!");
   } else if (puesto === 2) {
-    console.log("Usted recibe medalla de plata");
+    console.log("Felicitaciones! su medalla es de plata!");
   } else if (puesto === 3) {
-    console.log("Usted recibe medalla de bronce");
+    console.log("felicitaciones! su medalla es de bronce");
   }
 });
