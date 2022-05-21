@@ -6,17 +6,20 @@ let rotulo1 = document.getElementById("rotulo1");
 let rotulo2 = document.getElementById("rotulo2");
 
 rotulo1.innerHTML = "Ingrese el primer número";
-rotulo2.innerHTML = "Ingrese el primer número";
+rotulo2.innerHTML = "Ingrese el segundo número";
 btnEnviar.addEventListener("click", () => {
 
-let numeroinicial: number = Number (dato1.value);
+let primernumero: number = Number (dato1.value);
 let numerofinal: number = Number (dato2.value);
-let numeroactual, resultado: number;
-numeroactual = numeroinicial;
-resultado = 0;
-
-while (numeroactual <= numerofinal){
-  resultado = resultado + numeroactual;
-  numeroactual++;
+let cadena: string = " ";
+for (primernumero = 1; primernumero <= numerofinal; primernumero++) {
+  if (primernumero ) {
+    cadena = cadena + primernumero + " ";
+  }
 }
-console.log("El resultado es: ", resultado);
+console.log(cadena);
+
+}
+console.log("El resultado es:", primernumero, " x ", numeroactual, " = ", resultado);
+}
+}); 
