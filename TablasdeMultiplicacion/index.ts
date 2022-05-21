@@ -8,18 +8,11 @@ let rotulo2 = document.getElementById("rotulo2");
 rotulo1.innerHTML = "Ingrese el primer número";
 rotulo2.innerHTML = "Ingrese el segundo número";
 btnEnviar.addEventListener("click", () => {
-
-let primernumero: number = Number (dato1.value);
-let numerofinal: number = Number (dato2.value);
-let cadena: string = " ";
-for (primernumero = 1; primernumero <= numerofinal; primernumero++) {
-  if (primernumero ) {
-    cadena = cadena + primernumero + " ";
+  let tabla: number = Number(dato1.value);
+  let numerofinal: number = Number(dato2.value);
+  let resultado: number = 0;
+  for (let contador: number = 1; contador <= numerofinal; contador++) {
+    resultado = tabla * contador;
+    console.log(tabla + " x " + contador + " = " + resultado);
   }
-}
-console.log(cadena);
-
-}
-console.log("El resultado es:", primernumero, " x ", numeroactual, " = ", resultado);
-}
-}); 
+});
