@@ -19,10 +19,10 @@ let numero2: number = Number(dato2.value);
 let numero3: number = Number(dato3.value);
 
 if (numero1 > numero2 && numero1 > numero3) {
-   console.log("el número: ", numero1 " es el mayor");
+   console.log("el número: ", numero1 ," es el mayor");
  }else if (numero2 > numero1 && numero2 > numero3) {
-   console.log("el número: ", numero2 " es el mayor");
+   console.log("el número: ", numero2 ," es el mayor");
  }else if (numero3 > numero1 && numero3 > numero2) {
-   console.log("el número: ", numero3 " es el mayor");
+   console.log("el número: ", numero3 ," es el mayor");
   }
 });
